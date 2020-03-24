@@ -12,12 +12,13 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
 import org.springframework.http.HttpStatus;
 import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit.jupiter.SpringExtension;
 import util.base.BaseRestAssuredClient;
 import util.constants.Endpoints;
 
 import static io.restassured.RestAssured.given;
 
-@ExtendWith(MockitoExtension.class)
+@ExtendWith(SpringExtension.class)
 @ContextConfiguration(classes = Application.class)
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
 public class UserControllerIntegrationTests {
@@ -27,7 +28,7 @@ public class UserControllerIntegrationTests {
 
 
     @Test
-    void userNotFoundTest() throws RatingAnalyzer.UserNotFoundException {
+    void userNotFoundTest() {
         int nonExistingUserId = 666;
 
         //@formatter:off
