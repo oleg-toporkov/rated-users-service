@@ -57,8 +57,18 @@ Get creative and think about what may be missing in your deployment pipeline to 
 ## Starting Jenkins and building the application
 1. Run `make build && make run` under `./jenkins` folder to make Jenkins up and running. (see `./jenkins/README.md` for more information).
 
+##API E2E tests:
+To run all tests execute:
+```mvn clean test```
+To get fancy report execute:
+```mvn allure:serve```
 
-
+## API E2E tests findings
+In tests relying on data from `SampleData.USERS`. Anyway for real tests need to have exact test data.
+0. Added constructor for `User` entity to reuse it in tests
+1. When calling `/users/{id}/rated-users` response should be 404 as user not found, not 500
+2. As user 2 having no ratings, should I get only empty list as response (Test `getEmptyRatedUsersTest` is passing but need to know if it's by design or not)
+3. Not possible to catch all issues as no way to retrieve user with id `3` (he's having rating from non-existing user)
 
 # Notes
 

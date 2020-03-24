@@ -1,9 +1,12 @@
 package com.ebayk.data.user;
 
+import lombok.AllArgsConstructor;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+@AllArgsConstructor
 public class User {
 
   private final Integer id;
