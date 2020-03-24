@@ -5,6 +5,9 @@ LABEL maintainer = "toporkov.oleg@gmail.com"
 USER root
 RUN mkdir /var/log/jenkins
 RUN chown -R jenkins:jenkins /var/log/jenkins
+
+#Install additional tools
+RUN apt-get update && apt-get install -y maven
 USER jenkins
 
 #Setup env

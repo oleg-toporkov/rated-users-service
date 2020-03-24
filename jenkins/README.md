@@ -8,6 +8,7 @@ There are 5 main goals in `Makefile`:
 * clean - remove docker container with Jenkins
 
 (!) Default username/password is *admin/admin*.
+New job dsl files can be added to `./home/dsl` folder.
 
 ###TODO:
 1. Install all needed plugins.

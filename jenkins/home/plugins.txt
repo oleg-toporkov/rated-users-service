@@ -9,6 +9,7 @@ job-dsl:latest
 junit:latest
 mailer:latest
 matrix-project:latest
+maven-plugin:latest
 plain-credentials:latest
 scm-api:latest
 script-security:latest

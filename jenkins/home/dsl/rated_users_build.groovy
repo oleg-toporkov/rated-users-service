@@ -8,7 +8,7 @@ job('rated-users-service-build') {
         }
     }
     steps {
-        shell('mvn site')
+        maven('clean package')
         shell('cp target/*.war ./')
         shell('docker build -t rated-users-service ./src/main/docker')
     }
