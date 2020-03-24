@@ -11,12 +11,11 @@ There are 5 main goals in `Makefile`:
 New job dsl files can be added to `./home/dsl` folder.
 
 ###TODO:
-1. Install all needed plugins.
-2. Start automatically seedjob.
-3. Make versions for docker containers with Jenkins.
-4. Add slaves to Jenkins.
-5. Create separate volume for Jenkins data.
-6. Store credentials secure ;)
-7. Java version?
-8. Create separate repository for jenkins stuff.
-9. Migrate to pipelines from freestyle jobs
+1. Make versions for docker containers with Jenkins.
+2. Add slaves to Jenkins.
+3. Create separate volume for Jenkins data.
+4. Store credentials secure ;)
+5. Java version?
+6. Create separate repository for jenkins stuff.
+7. Migrate to pipelines from freestyle jobs
+8. Not able to build application container inside of dockerized Jenkins.

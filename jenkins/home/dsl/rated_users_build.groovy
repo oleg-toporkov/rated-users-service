@@ -10,7 +10,7 @@ job('rated-users-service-build') {
     steps {
         maven('clean package')
         shell('cp target/*.war ./')
-        shell('docker build -t rated-users-service ./src/main/docker')
+//        shell('docker build -t rated-users-service ./src/main/docker') TODO not able to build container inside of the container
     }
     publishers {
         archiveArtifacts '*.war'
