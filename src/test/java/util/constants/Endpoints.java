@@ -1,4 +1,4 @@
-package constants;
+package util.constants;
 
 final public class Endpoints {
 

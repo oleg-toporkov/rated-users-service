@@ -1,14 +1,14 @@
 package e2e;
 
 import com.ebayk.data.user.User;
-import constants.Endpoints;
+import util.constants.Endpoints;
 import org.junit.jupiter.api.Test;
 import org.springframework.http.HttpStatus;
 
 import java.util.List;
 
-import static base.BaseRestAssuredClient.BASE_REQUEST_SPEC;
-import static base.BaseRestAssuredClient.BASE_RESPONSE_SPEC;
+import static util.base.BaseRestAssuredClient.BASE_REQUEST_SPEC;
+import static util.base.BaseRestAssuredClient.BASE_RESPONSE_SPEC;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;

@@ -3,12 +3,15 @@ package com.ebayk.service;
 import com.ebayk.data.user.User;
 import com.ebayk.data.user.UserRating;
 import com.ebayk.data.user.UserRepository;
+import org.springframework.stereotype.Service;
+
 import java.util.ArrayList;
 import java.util.List;
 
+@Service
 public class RatingAnalyzer {
 
-  public static List<User> getRatedUserForRatingCreator(Integer userId)
+  public List<User> getRatedUserForRatingCreator(Integer userId)
       throws UserNotFoundException {
 
     List<User> ratedUsers = new ArrayList<User>();
